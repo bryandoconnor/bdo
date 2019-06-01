@@ -1,0 +1,357 @@
+.btn {
+  display:inline-block;
+  padding:6px 12px;
+  margin-bottom:0;
+  font-size:14px;
+  font-weight:400;
+  line-height:1.42857143;
+  text-align:center;
+  white-space:nowrap;
+  vertical-align:middle;
+  -ms-touch-action:manipulation;
+  touch-action:manipulation;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  background-image:none;
+  border:1px solid transparent;
+  border-radius:0px;
+}
+
+.Blue-button {
+  color:#fff;
+  background-color:#1d4cd6;
+  background-image:none;
+  border-color:#1d4cd6;
+}
+
+.Blue-button:hover {
+  color:#1d4cd6;
+  background-color:#fff;
+  border-color:#1d4cd6;
+  transition-duration:.8s;
+}
+
+.Blue-Rev-button {
+  color:#1d4cd6;
+  background-color:transparent;
+  background-image:none;
+  border-color:#1d4cd6;
+}
+
+.Blue-Rev-button:hover {
+  color:#fff;
+  background-color:#1d4cd6;
+  border-color:#1d4cd6;
+  transition-duration:.8s;
+}
+
+.Light-Blue-button {
+  color:#fff;
+  background-color:#52c1ff;
+  background-image:none;
+  border-color:#52c1ff;
+}
+
+.Light-Blue-button:hover {
+  color:#52c1ff;
+  background-color:#fff;
+  border-color:#52c1ff;
+  transition-duration:.8s;
+}
+
+.Light-Blue-Rev-button {
+  color:#52c1ff;
+  background-color:transparent;
+  background-image:none;
+  border-color:#52c1ff;
+}
+
+.Light-Blue-Rev-button:hover {
+  color:#fff;
+  background-color:#52c1ff;
+  border-color:#52c1ff;
+  transition-duration:.8s;
+}
+
+.Orange-button {
+  color:#fff;
+  background-color:#ff9406;
+  background-image:none;
+  border-color:#ff9406;
+}
+
+.Orange-button:hover {
+  color:#ff9406;
+  background-color:#fff;
+  border-color:#ff9406;
+  transition-duration:.8s;
+}
+
+.Orange-button:hover {
+  color:#ff9406;
+  background-color:#fff;
+  border-color:#ff9406;
+  transition-duration:.8s;
+}
+
+.Orange-Rev-button {
+  color:#ff9406;
+  background-color:transparent;
+  background-image:none;
+  border-color:#ff9406;
+}
+
+.Orange-Rev-button:hover {
+  color:#fff;
+  background-color:#ff9406;
+  border-color:#ff9406;
+  transition-duration:.8s;
+}
+
+.Green-button {
+  color:#fff;
+  background-image:none;
+  background-color:#29c60e;
+  border-color:#29c60e;
+}
+
+.Green-button:hover {
+  color:#29c60e;
+  background-color:#fff;
+  border-color:#29c60e;
+  transition-duration:.8s;
+}
+
+.Green-Rev-button {
+  color:#29c60e;
+  background-image:none;
+  background-color:transparent;
+  border-color:#29c60e;
+}
+
+.Green-Rev-button:hover {
+  color:#fff;
+  background-color:#29c60e;
+  border-color:#29c60e;
+  transition-duration:.8s;
+}
+
+.Red-button {
+  color:#fff;
+  background-image:none;
+  background-color:#ff1a1a;
+  border-color:#ff1a1a;
+}
+
+.Red-button:hover {
+  color:#ff1a1a;
+  background-color:#fff;
+  border-color:#ff1a1a;
+  transition-duration:.8s;
+}
+
+.Red-Rev-button {
+  color:#ff1a1a;
+  background-image:none;
+  background-color:transparent;
+  border-color:#ff1a1a;
+}
+
+.Red-Rev-button:hover {
+  color:#fff;
+  background-color:#ff1a1a;
+  border-color:#ff1a1a;
+  transition-duration:.8s;
+}
+
+.Purple-button {
+  color:#fff;
+  background-image:none;
+  background-color:#9138f9;
+  border-color:#9138f9;
+}
+
+.Purple-button:hover {
+  color:#9138f9;
+  background-color:#fff;
+  border-color:#9138f9;
+  transition-duration:.8s;
+}
+
+.Purple-Rev-button {
+  color:#9138f9;
+  background-image:none;
+  background-color:transparent;
+  border-color:#9138f9;
+}
+
+.Purple-Rev-button:hover {
+  color:#fff;
+  background-color:#9138f9;
+  border-color:#9138f9;
+  transition-duration:.8s;
+}
+
+.Black-button {
+  color:#fff;
+  background-image:none;
+  background-color:#000;
+  border-color:#000;
+}
+
+.Black-button:hover {
+  color:#000;
+  background-color:#fff;
+  border-color:#000;
+  transition-duration:.8s;
+}
+
+.Large-button {
+  font-size:25px;
+  margin:20px auto;
+  padding:10px 30px;
+  box-shadow:2px 2px 10px #888;
+}
+
+@media (max-width:1199px) {
+  .Large-button {
+    font-size:20px;
+  }
+}
+
+@media (max-width:991px) {
+  .Large-button {
+    font-size:18px;
+  }
+}
+
+@media (max-width:767px) {
+  .Large-button {
+    font-size:17px;
+  }
+}
+
+.Large-Rev-button {
+  font-size:25px;
+  margin:20px auto;
+  padding:10px 30px;
+}
+
+@media (max-width:1199px) {
+  .Large-Rev-button {
+    font-size:20px;
+  }
+}
+
+@media (max-width:991px) {
+  .Large-Rev-button {
+    font-size:18px;
+  }
+}
+
+@media (max-width:767px) {
+  .Large-Rev-button {
+    font-size:17px;
+  }
+}
+
+.Medium-button {
+  font-size:16px;
+  margin:20px auto;
+  padding:10px 30px;
+  box-shadow:2px 2px 10px #888;
+}
+
+@media (max-width:1199px) {
+  .Medium-button {
+    font-size:15px;
+  }
+}
+
+@media (max-width:991px) {
+  .Medium-button {
+    font-size:14px;
+  }
+}
+
+@media (max-width:767px) {
+  .Medium-button {
+    font-size:13px;
+  }
+}
+
+.Medium-Rev-button {
+  font-size:16px;
+  margin:20px auto;
+  padding:10px 30px;
+}
+
+@media (max-width:1199px) {
+  .Medium-Rev-button {
+    font-size:15px;
+  }
+}
+
+@media (max-width:991px) {
+  .Medium-Rev-button {
+    font-size:14px;
+  }
+}
+
+@media (max-width:767px) {
+  .Medium-Rev-button {
+    font-size:13px;
+  }
+}
+
+.Testimonial-button {
+  font-size:20px;
+  margin:30px auto 15px auto;
+  padding:5px 40px;
+  box-shadow:2px 2px 10px #888;
+}
+
+@media (max-width:1199px) {
+  .Testimonial-button {
+    font-size:15px;
+    margin:15px auto 5px auto;
+  }
+}
+
+.Product-button {
+  font-size:20px;
+  margin:30px auto;
+  padding:5px 40px;
+  box-shadow:2px 2px 10px #888;
+}
+
+@media (max-width:1199px) {
+  .Product-button {
+    font-size:15px;
+    margin:15px auto;
+  }
+}
+
+@media (max-width:767px) {
+  .Product-button {
+    font-size:12px;
+    padding:5px 20px;
+  }
+}
+
+#Rep-Navbar {
+  position:fixed;
+  background-color:#fff;
+  width:100%;
+  z-index:3;
+}
+
+.HealthProd-banner {
+  background-image:url(https://s3-us-west-2.amazonaws.com/tranontmedia/Images/Site+Links/HealthProductsBanner.jpg);
+  background-position:center center;
+  background-size:cover;
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombicide App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans">
+    <link rel="stylesheet" href="https://bryandoconnor.s3-us-west-2.amazonaws.com/css/zombie-styles.css">
+    <link rel="stylesheet" href="https://bryandoconnor.s3-us-west-2.amazonaws.com/css/Buttons.css">
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <div><img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Clovis-card.jpg" class="character-card"></div>
+      <div class="name">CLOVIS</div>
+      <input type="checkbox" id="clovisCheck">
+      <div><span class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="clovisHP">
+      </div>
+    </div>
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Ann-card.jpg" class="character-card">
+      <div class="name">ANN</div>
+      <input type="checkbox" id="annCheck">
+      <div><span class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="annHP">
+      </div>
+    </div>
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Baldric-card.jpg" class="character-card">
+      <div class="name">BALDRIC</div>
+      <input type="checkbox" id="baldricCheck">
+      <div><span id="hp" class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="baldricHP">
+      </div>
+    </div>
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Silas-card.jpg" class="character-card">
+      <div class="name">SILAS</div>
+      <input type="checkbox" id="silasCheck">
+      <div><span class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="silasHP">
+      </div>
+    </div>
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Nelly-card.jpg" class="character-card">
+      <div class="name">NELLY</div>
+      <input type="checkbox" id="nellyCheck">
+      <div><span class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="nellyHP">
+      </div>
+    </div>
+
+    <div class="col-lg-2 character-col">
+      <form class="life-form">
+        Life:
+        <input type="radio" name="life">
+        <input type="radio" name="life">
+        <input type="radio" name="life" checked="checked">
+      </form>
+      <img src="https://bryandoconnor.s3-us-west-2.amazonaws.com/images/Samson-card.jpg" class="character-card">
+      <div class="name">SAMSON</div>
+      <input type="checkbox" id="samsonCheck">
+      <div><span class="hp"></span></div>
+      <div>
+        <h6>Pts</h6>
+        <input type="number" name="quantity" min="0" max="45" value="0" id="samsonHP">
+      </div>
+    </div>
+
+    <button class="btn-success Medium-button Orange-button" onClick="checkHP();">Update</button>
+
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint1" style="display:none"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck1">
+    </div>
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint2"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck2">
+    </div>
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint3"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck3">
+    </div>
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint4"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck4">
+    </div>
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint5"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck5">
+    </div>
+    <div class="col-lg-2 character-col">
+      <h5 id="spawnPoint6"></h5>
+      <h6>Spawn Pt</h6>
+      <input type="checkbox" id="spawnCheck6">
+    </div>
+    <button class="btn-success Medium-button Orange-button" onClick="spawnZombies()">Spawn</button>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-lg-12 dice">
+      <div><h6>Dice <input type="number" name="quantity" min="0" max="10" value="1" id="diceInput"> <button class="btn-success Small-button Orange-button" onClick="showDice();">Update</button></h6></div>
+
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1" id="d1"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice1" max-length="3"></div>
+        <div class="col-lg-1" id="d2"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice2" max-length="3"></div>
+        <div class="col-lg-1" id="d3"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice3" max-length="3"></div>
+        <div class="col-lg-1" id="d4"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice4" max-length="3"></div>
+        <div class="col-lg-1" id="d5"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice5" max-length="3"></div>
+        <div class="col-lg-1" id="d6"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice6" max-length="3"></div>
+        <div class="col-lg-1" id="d7"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice7" max-length="3"></div>
+        <div class="col-lg-1" id="d8"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice8" max-length="3"></div>
+        <div class="col-lg-1" id="d9"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice9" max-length="3"></div>
+        <div class="col-lg-1" id="d10"><input type="number" name="quantity" min="1" max="6" value="1" id="numDice10" max-length="3"></div>
+        <div class="col-lg-1"></div>
+      </div>
+
+      <br>
+
+      <button class="btn-success Medium-button Orange-button" onClick="rollDice();">Roll</button>
+    </div>
+  </div>
+
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://bryandoconnor.s3-us-west-2.amazonaws.com/js/zombie-script.js"></script>
+
+</body>
+
+</html>
